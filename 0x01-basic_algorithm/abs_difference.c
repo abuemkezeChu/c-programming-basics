@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 int main()
 {
   const int NUMBER = 51;
@@ -8,6 +8,14 @@ int main()
   scanf("%d", &n);
   // calculate the difference
   diff = n - NUMBER;
-  printf("Absolute difference is : ", abs(diff));
+  if (n > NUMBER)
+  {
+    printf("Absolute difference is %d : \n", 3 * abs(diff));
+  }
+  else
+  {
+    printf("Absolute difference is %d : \n", abs(diff));
+  }
+
   return 0;
 }
